@@ -34,3 +34,30 @@ const myFunction = function(){
 }
 
 console.log(typeof myFunction);
+
+
+
+
+// Stack (primitive), Heap (non-primitive)
+
+let name = "Aahaan"
+
+let anothername  = name
+anothername = "Sethi"
+
+console.log(name);
+console.log(anothername);
+
+let userOne = {
+    email: "aahaansethi1001@gmail.com",
+    upi: "7079555777@yesbank"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "aahaansethi@gmail.com"; 
+
+console.log(userOne.email);  // This will print the updated email
+console.log(userTwo.email);  // This will also print the updated email
+
+
